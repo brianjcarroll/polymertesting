@@ -2,12 +2,12 @@
 
 <polymer-element name="my-element">
   <template>
-    <span>Hello from <b>my-element</b>. This is my Shadow DOM.</span>
+    <span id="theSpan">Hello from <b>my-element</b>. This is my Shadow DOM.</span>
   </template>
   <script>
     Polymer({
       ready: function() {
-        console.log(this);
+        this.$.theSpan.textContent = 'lolol';
       }
 
     });
